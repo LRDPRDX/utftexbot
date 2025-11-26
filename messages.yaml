@@ -4,7 +4,9 @@ start:
   to you in a form of a (pretty printed) message,
   so you can see and copy it. I use this awesome FOSS -
   https://github.com/bartp5/libtexprintf to do it. Check it out !
-  I will add more functionality later and make the code FOSS when it's done.
+
+  💡 If you have any questions or suggestions feel free to add an issue:
+  https://github.com/LRDPRDX/utftexbot
 
   ☝This bot *doesn't* collect or track *any* data from the users.
 

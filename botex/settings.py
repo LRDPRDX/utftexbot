@@ -9,6 +9,9 @@ This bot allows you to render math written in a LaTeX-like syntax.
 The backend for this bot is this
 awesome project: https://github.com/bartp5/libtexprintf . Check it out !
 
+💡 If you have any questions or suggestions feel free to add an issue:
+https://github.com/LRDPRDX/utftexbot
+
 ☝This bot *doesn't* collect or track *any* data from the users.
 I will make the code FOSS when it's done.
 '''
