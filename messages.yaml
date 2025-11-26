@@ -1,0 +1,50 @@
+start:
+|
+  This bot will render your LaTeX code and send it back
+  to you in a form of a (pretty printed) message,
+  so you can see and copy it. I use this awesome FOSS -
+  https://github.com/bartp5/libtexprintf to do it. Check it out !
+  I will add more functionality later and make the code FOSS when it's done.
+
+  ☝This bot *doesn't* collect or track *any* data from the users.
+
+  *Commands:*
+
+  /start  - This message
+  /help   - More details about the bot
+  /tex    - Render LaTeX
+  /ping   - Check if the bot is alive
+  /state  - Your current state
+  /cancel - To cancel your current state/action
+
+  *Don't flood*, please. Otherwise you'll be *blocked* !
+
+help:
+|
+  /start  - General info. Try to see.
+
+  /ping   - Check if the bot is alive. Sends you 🚀 as a response if alive, nothing otherwise.
+
+  /tex    - ☝ *This is what you want.* Type som eLaTeX and this bot will render and send it back
+  to you in a form of a message, so you can copy it, for example.
+
+  /tex `LaTeX code` will render `LaTeX code` immediately. For example, `/tex \frac{1}{2}`.
+
+  /tex    - Same as above but takes two steps: it considers your next message is what to render.
+
+  /state  - Mostly for debugging purpose.
+  It tells the current state you're in.
+  In other words, what the bot is waiting for from you.
+  For example, if you've just sent `/tex` to the bot it is waiting for `LaTeX code` to process.
+
+  /cancel - Resets your current state. Use this command when you want to start from scratch.
+
+in_progress     : 'Processing...'
+empty_input     : 'Type some TeX to render.'
+not_implemented : 'Not implemented yet 😢'
+no_output       : '🤷 No output'
+cancel          : 'Cancelling...'
+cancel_done     : 'Done.'
+no_flood:
+|
+  Don't flood !!!
