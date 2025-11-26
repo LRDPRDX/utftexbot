@@ -1,5 +1,7 @@
 # A simple LaTeX \to Text telegram bot
 
+:warning: This bot *doesn't* collect or track *any* data from the users. :warning:
+
 ![demo](/assets/demo.gif)
 
 ## Usage
