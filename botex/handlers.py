@@ -51,6 +51,12 @@ def cancelQ(call, bot: TeleBot) -> None :
     doCancel(bot, call.message.chat.id, call.from_user.id)
 
 @handler
+def defaultQ(call, bot: TeleBot) :
+    bot.answer_callback_query(call.id, M['query'])
+    bot.delete_message(call.message.chat.id, call.message.message_id)
+    bot.delete_state(call.from_user.id, call.message.chat.id)
+
+@handler
 def start(message: types.Message, bot: TeleBot) -> None :
     bot.send_message(message.chat.id, text = M['start'], reply_markup=kb.startKeyboard())
 

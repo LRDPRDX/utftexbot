@@ -38,6 +38,7 @@ bot.setup_middleware(AntifloodMiddleware(bot, 1))
 bot.register_message_handler(handlers.state, commands=['state'], pass_bot=True)
 bot.register_message_handler(handlers.cancel, state='*', commands=['cancel'], pass_bot=True)
 bot.register_callback_query_handler(handlers.cancelQ, func=lambda call: call.data=='/cancel', state='*', pass_bot=True)
+bot.register_callback_query_handler(handlers.defaultQ, func=lambda call: True, pass_bot=True)
 # Start
 bot.register_message_handler(handlers.start, commands=['start'], pass_bot=True)
 bot.register_message_handler(handlers.help, commands=['help'], pass_bot=True)

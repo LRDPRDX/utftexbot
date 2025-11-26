@@ -47,6 +47,7 @@ not_implemented : 'Not implemented yet 😢'
 no_output       : '🤷 No output'
 cancel          : 'Cancelling...'
 cancel_done     : 'Done.'
+query           : 'Wait...'
 no_flood:
 |
   Don't flood !!!
