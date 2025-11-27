@@ -13,7 +13,6 @@ awesome project: https://github.com/bartp5/libtexprintf . Check it out !
 https://github.com/LRDPRDX/utftexbot
 
 ☝This bot *doesn't* collect or track *any* data from the users.
-I will make the code FOSS when it's done.
 '''
 
 commands = [
