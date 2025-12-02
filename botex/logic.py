@@ -23,7 +23,7 @@ def latex2string(latex: str, limit: int | None = None) -> tuple[bool, str] :
         return False, f'Expression too long (maximum length: {limit} characters)'
 
     try :
-        p = subprocess.run(['/usr/local/bin/utftex', latex],
+        p = subprocess.run(['/usr/local/bin/utftex', '-e', latex],
                            capture_output = True,
                            check = True,
                            timeout = timeout)
